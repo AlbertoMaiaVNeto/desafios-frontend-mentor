@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1,p{
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    font-size: 18px;
+}
+
+.mainimg{
+    width: 100%;
+    border-radius: 5px;
+}
+
+hr{
+    border-color: hsl(215, 32%, 27%);
+}
+.container{
+    width: 350px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imagem{
+    position: relative;
+}
+.over{
+    background-color: hsl(178, 100%, 50%);
+    opacity: 40%;
+    position: absolute;
+    top: 0;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    display: none;
+
+
+}
+
+.view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.imagem:hover .over,
+.imagem:hover .view{
+    display: block;
+}
+
+.conteudo{
+    display: grid;
+    gap: 20px;
+}
+
+.conteudo h1{
+    color: white;
+}
+
+.conteudo p{
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5;
+}
+
+.conteudo strong{
+    color: white;
+    font-weight: normal;
+}
+
+.valores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.moeda{
+    display: flex;
+    gap: 10px;
+    color: hsl(178, 100%, 50%);
+}
+.relogio{
+    display: flex;
+    gap: 10px;
+    color: hsl(215, 51%, 70%);
+}
+
+
+.espaco{
+    width: 100%;
+    height: 2px;
+    background-color: hsl(215, 32%, 27%)
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer img{
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
