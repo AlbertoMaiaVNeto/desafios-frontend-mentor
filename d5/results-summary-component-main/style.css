@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root{
+    --lgiht-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --fonte: 'Hanken Grotesk', sans-serif;
+
+    --bg-gradiente: hsl(252, 100%, 67%);
+    --bg-gradiente2: hsl(241, 81%, 54%);
+
+    --circle-gradiente: hsla(256, 72%, 46%, 1);
+    --circle-gradiente2: hsla(241, 72%, 46%, 0);
+
+    --font-color: hsl(221, 100%, 96%);
+    --font-color2: hsl(241, 100%, 89%);
+    --button: hsl(224, 30%, 27%);
+}
+
+body{
+    margin: 0;
+    background-color: var(--font-color);
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte);
+}
+
+h1,h2,h3,p{
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.card{
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffffff;
+    border-radius: 1rem;
+}
+
+
+.card-result{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 1rem;
+    gap: 20px;
+}
+
+.card-result p{
+        font-size: .875rem;
+        padding: 0;
+        color: var(--font-color2);
+        margin-bottom: 20px;
+       
+}
+.card-result h2{
+    margin-top: 20px;
+    color: var(--font-color2);
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.card-result .great{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 100px;
+    height: 100px;
+    border-radius: 50% ;
+    padding: 10px;
+    justify-content: center;
+}
+
+.score{
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.total{
+    color: var(--font-color2);
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-content: center;
+    border-radius: .5rem;
+}
+
+.reaction{
+    background-color: hsla(0, 100%, 67%, 0.050);
+    font-size: 0.875rem;
+}
+
+.reaction-img{
+    display: flex;
+    gap: 5px;
+}
+
+.reaction .reaction-img{
+    color: var(--lgiht-red);
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+
+.memory{
+    background-color: hsla(39, 100%, 56%, 0.050);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.memory-img{
+    display: flex;
+    gap: 5px;
+    color: var(--Orangey-yellow);
+}
+
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.050);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+.verbal-img{
+    display: flex;
+    gap: 5px;
+    color: var(--Green-teal);
+}
+.visual{
+    background-color: hsla(234, 85%, 45%, 0.050);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+.visual-img{
+    display: flex;
+    color: var(--Cobalt-blue);
+    gap: 5px;
+}
+
+.card-summary{
+    background-color: white;
+    border-radius: 0 1rem 1rem 0;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+li span{
+    color: var(--button);
+    font-weight: 900;
+}
+.lista b{
+    color: hsla(224, 30%, 27%, 0.412);;
+    font-weight: 900;
+}
+
+.card-summary h2{
+        margin-top: 20px;
+        color: var(--button);
+        font-weight: 800;
+        font-size: 1.125rem;
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button{
+    padding: 12px 0;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: var(--button);
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 500px){
+    .card{
+        grid-template-columns: 1fr;
+        width: 300px;
+    }
+    .card-result{
+        gap: 10px;
+        padding: 10px 20px;
+        border-radius: 0 0 1rem 1rem;
+    }
+    .card-result h2{
+        margin-top: 10px;
+    }
+    .card-summary{
+        gap: 15px;
+        border-radius: 0;
+    }
+    .card-summary h2{
+        margin-top: 0px;
+    }
+}
