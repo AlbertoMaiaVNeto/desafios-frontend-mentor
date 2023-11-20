@@ -91,6 +91,7 @@ h2,p{
     display: block;
     justify-self: flex-end;
     align-self: start;
+    cursor: pointer;
 }
 
 .botao:hover{
